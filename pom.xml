@@ -5,7 +5,7 @@
 
     <groupId>org.vaadin.spring</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>14.0.1-SNAPSHOT</version>
+    <version>14.0.1-SNS</version>
     <packaging>pom</packaging>
 
     <name>Vaadin4Spring</name>
@@ -93,28 +93,18 @@
 
     <properties>
         <project.build.encoding>UTF-8</project.build.encoding>
-        <project.build.target>1.8</project.build.target>
-        <project.build.source>1.8</project.build.source>
-
-        <vaadin.version>14.0.1</vaadin.version>
+        <project.build.target>17</project.build.target>
+        <project.build.source>17</project.build.source>
 
         <!-- Match version used by Vaadin Spring dependency -->
-        <spring.version>5.1.2.RELEASE</spring.version>
+        <spring.version>6.0.11</spring.version>
 
-        <junit-jupiter.version>5.5.1</junit-jupiter.version>
+        <junit-jupiter.version>5.9.3</junit-jupiter.version>
         <mockito.version>3.0.0</mockito.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>com.vaadin</groupId>
-                <artifactId>vaadin-bom</artifactId>
-                <version>${vaadin.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>

@@ -25,7 +25,7 @@ import org.vaadin.spring.events.EventBusListener;
 import org.vaadin.spring.events.EventScope;
 import org.vaadin.spring.events.annotation.EventBusListenerMethod;
 
-import javax.annotation.PreDestroy;
+import jakarta.annotation.PreDestroy;
 import java.io.Serializable;
 import java.lang.reflect.Method;
 
